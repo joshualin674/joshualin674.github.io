@@ -14,7 +14,7 @@ body.page1 {
 }
 
 body.page2 {
-    background-image: url('newback.png');
+    background-image: url('back.png');
     background-size: cover;
     background-position: center;
     background-color: black;
