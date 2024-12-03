@@ -14,7 +14,7 @@ body.page1 {
 }
 
 body.page2 {
-    background-image: url('newback.png');
+    background-image: url('background.png');
     background-size: cover;
     background-position: center;
     background-color: black;
@@ -42,6 +42,10 @@ body.page2 {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Increases the shadow on hover */
 }
 
+.image-row img[alt="App"]:hover {
+    transform: scale(2.5); /* Enlarges this image more than the others */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5); /* Larger shadow for emphasis */
+}
 
 body.page3 {
     background-image: url('misc.png');
@@ -403,3 +407,42 @@ body.page3 {
         max-height: 150px;
     }
 }
+
+body.pagework {
+    background-image: url('workback.png'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-color: black; /* Fallback background color */
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.center-links {
+    position: absolute;
+    top: 47%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for proper centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px; /* Space between the links */
+}
+
+.center-link {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Default text color */
+    text-decoration: none; /* No underline */
+    font-family: 'Roboto Mono', monospace;
+    transition: text-shadow 0.3s ease; /* Smooth glow transition */
+}
+
+.center-link:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                 0 0 40px rgba(255, 255, 255, 0.9), 
+                 0 0 60px rgba(255, 255, 255, 0.8), 
+                 0 0 80px rgba(255, 255, 255, 0.7); /* Larger glowing text effect */
+}
+
+
+
